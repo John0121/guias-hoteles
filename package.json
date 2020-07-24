@@ -4,8 +4,8 @@
   "description": "nuestro primer proyecto de nodejs",
   "main": "index.html",
   "scripts": {
-    "dev" : "servidor-lite"
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "servidor-lite"
   },
   "repository": {
     "type": "git",
