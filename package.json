@@ -4,9 +4,8 @@
   "description": "nuestro primer proyecto de nodejs",
   "main": "index.html",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "servidor-lite"
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,7 +15,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/jhon0121/guias-hoteles#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
