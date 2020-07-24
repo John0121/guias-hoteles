@@ -1,0 +1,16 @@
+{
+  "name": "guias-hoteles",
+  "version": "1.0.0",
+  "description": "nuestro primer proyecto de nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jhon0121@bitbucket.org/jhon0121/guias-hoteles.git"
+  },
+  "author": "john esteban",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jhon0121/guias-hoteles#readme"
+}
