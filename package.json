@@ -4,6 +4,7 @@
   "description": "nuestro primer proyecto de nodejs",
   "main": "index.html",
   "scripts": {
+    "dev" : "servidor-lite"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "john esteban",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/jhon0121/guias-hoteles#readme"
+  "homepage": "https://bitbucket.org/jhon0121/guias-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
