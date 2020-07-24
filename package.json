@@ -15,7 +15,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/jhon0121/guias-hoteles#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4",
+    "lite-server": "^2.5.4"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
