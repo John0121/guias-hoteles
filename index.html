@@ -8,16 +8,38 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/">
+
 
     <title>Guías hoteles</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-md  navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand"  href="#">Hoteles</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item-active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Términos y condiciónes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">contacto</a></li>
+        </ul>
+      </div>
+    </nav>
 
   <div class="jumbotron">
     <h1>Hoteles</h1>
   </div>   
   <!--se agregó dos container con 3 parráfos y con los elementos row y col-sm-->
   <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
     <div class="row">
       <div class="col-sm-4">
         <p>
@@ -116,29 +138,29 @@
   </div>
       
     <footer>
-      <div class="row" >
+      <div class="row">
         <div class="col-sm-4 d-flex flex-column">
-          <a href="facebook">facebook</a>
+          <a target="blanck" href="https://www.facebook.com/">facebook</a>
           <a href="instagram">instagram</a>
           <a href="google">google</a>
           <a href="twitter">twiter</a>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 d-flex flex-column align-items-center">
           <address>
-            <h1>Oficina central</h1>
+            <h1>Contacto</h1>
             <p>antioquia, medellín colombia</p>
             <p>tel:+573218925456</p>
             <p>hotelguia@hoteles.com</p>
           </address>
         </div>
-          <div class="col-sm-4 d-flex flex-column align-items-end">
-            <a href="www.facebook.com">precios</a>
-            <a href="www.facebook.com">nosotrós</a>
-            <a href="www.facebook.com">términos y condiciónes</a>
-            <a href="www.facebook.com">contacto</a>
-          </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+          <a  href="www.facebook.com">precios</a>
+          <a  href="www.facebook.com">nosotrós</a>
+          <a  href="www.facebook.com">términos y condiciónes</a>
+          <a  href="www.facebook.com">contacto</a>
         </div>
-      </footer>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
