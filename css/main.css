@@ -25,7 +25,16 @@ margin-bottom: 0px;
     width: 100%;
     border-radius: 25px;
 }
+
 .div-foo{
 margin-top:5px;
 margin-bottom: 0px;
+}
+.footer-adress-icon {
+    padding-right: 10px;
+}
+
+.footer-redes-icon {
+    padding-right: 5px;
+    margin-top: 10px;
 }
