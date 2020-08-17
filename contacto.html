@@ -34,6 +34,7 @@
   <div class="jumbotron">
     <h1>Contacto</h1>
   </div>   
+
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -41,15 +42,57 @@
         <li class="breadcrumb-item active" aria-current="page">contacto</li>
       </ol>
     </nav>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget lorem enim. Mauris non sagittis odio. Donec nec luctus dui. Nulla nec tempus dolor. Nunc dignissim sapien sed porttitor fermentum. Nulla ac turpis ut neque congue tincidunt. Vivamus sit amet lectus lorem. Fusce finibus diam in ex ornare venenatis. Pellentesque molestie pellentesque elit a dignissim. Morbi interdum sed justo sit amet pretium. Nullam nec auctor elit. Mauris placerat libero lorem, vitae mattis ipsum luctus in. Vivamus pretium, nunc sit amet accumsan congue, massa lorem sagittis magna, auctor pharetra quam metus eleifend dolor. Sed rutrum feugiat sem vel mollis. Aliquam lacinia tellus non elit dapibus mattis. In accumsan varius augue, pretium viverra enim efficitur eu.
 
-      Nullam ornare purus nec tortor placerat lacinia. Proin a magna in metus bibendum feugiat ac quis tellus. Proin eu blandit sem, quis consectetur nulla. Mauris nec nisi condimentum, lacinia metus in, aliquet nunc. Donec at euismod quam. Cras suscipit commodo sodales. Proin egestas, lacus eu condimentum volutpat, nibh mauris laoreet turpis, eu gravida massa diam eu tortor. Curabitur cursus purus ligula, mattis hendrerit metus feugiat non.
-      
-      Etiam efficitur viverra ante, id viverra eros ultricies nec. Donec vulputate sapien nisl, scelerisque consequat neque molestie eget. Quisque at velit dolor. Pellentesque a turpis pharetra erat blandit accumsan egestas sodales dolor. Mauris est risus, placerat in metus vitae, dictum tincidunt mi. Curabitur lacinia bibendum nibh, eget rutrum lorem semper vehicula. Mauris imperdiet dolor at ante egestas, commodo rutrum leo facilisis. Suspendisse aliquet turpis a nibh suscipit, vitae sodales urna gravida. Fusce venenatis porttitor arcu sed imperdiet. Etiam diam turpis, porta nec ante ultrices, rhoncus maximus metus. Phasellus quis odio non eros dictum semper quis eget magna. Cras rutrum tempor maximus. Pellentesque eget ex non ante bibendum condimentum. Cras blandit imperdiet lacus vel sagittis.</p>
+    <h1>Dejame tu comentario</h1>
+
+    <form style="margin-top: 20px;">
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="apellido">Apellido</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su apellido">
+        </div>
+      </div> 
+      <div class="form-group">
+        <label type="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-sm-9">
+          <label for="direccion">Dirección</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su dirección">
+        </div>
+        <div class="form-group col-sm-3">
+         <label for="departamento">Departamento</label>
+         <select id="departamento" class="form-control">
+          <option selected>Antioquia</option>
+          <option>barranquilla</option>
+          <option>acacias</option>
+          <option>Cali</option>
+          <option>Cartagéna</option>
+          <option>Bogotá</option>
+        </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" class="form-control" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridcheck">
+          <label class="form-check-label" for="gridcheck">Quiero que me contacten</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
   </div>
 
   <footer>
-    <div class="container-fluid" >
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4 d-flex flex-column">
           <a class="footer-redes-icon" target="blanck" href="https://www.facebook.com"><img src="https://img.icons8.com/color/30/000000/facebook.png"/>facebook</a>
