@@ -38,7 +38,7 @@
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="./index.html" title="volver al home">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">contacto</li>
       </ol>
     </nav>
@@ -53,7 +53,7 @@
         </div>
         <div class="form-group col-sm-6">
           <label for="apellido">Apellido</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su apellido">
+          <input type="text" class="form-control" id="surname" placeholder="Ingrese su apellido">
         </div>
       </div> 
       <div class="form-group">
@@ -78,42 +78,52 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="comentario">Comentario</label>
-        <textarea id="comentario" class="form-control" rows="10"></textarea>
+        <label for="comentario"><span class="oi oi-comment-square"></span> Comentario</label>
+        <textarea id="comentario" class="form-control" rows="10" placeholder="Dejar comentario"></textarea>
       </div>
       <div class="form-group">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridcheck">
-          <label class="form-check-label" for="gridcheck">Quiero que me contacten</label>
+          <label class="form-check-label" for="gridcheck">Quiero recibir notificaciones de promociones a mi correo.</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridcheck">
+          <label class="form-check-label" for="gridcheck">Acepto los términos y condiciones.</label>
         </div>
       </div>
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </div>
 
+  <div class="container-fluid">
+    <h2 style="margin-top: 20px; margin-bottom: 10px; padding-left: 5px; ">Encuentranos...</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126910.7558060716!2d-75.66643307121291!3d6.2688439961553595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428ef4e52dddb%3A0x722fd6c39270ac72!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1598224045221!5m2!1ses!2sco" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+
+
   <footer>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 d-flex flex-column">
-          <a class="footer-redes-icon" target="blanck" href="https://www.facebook.com"><img src="https://img.icons8.com/color/30/000000/facebook.png"/>facebook</a>
-          <a class="footer-redes-icon" target="blanck" href="https://www.instagram.com/?hl=es-la"><img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>instagram</a>
-          <a class="footer-redes-icon" target="blanck" href="https://www.google.com.co/?gfe_rd=cr&ei=kBzqVff1IIKv-AW7jJXgAw"><img src="https://img.icons8.com/color/30/000000/google-logo.png"/>google</a>
-          <a class="footer-redes-icon" target="blanck" href="https://twitter.com/?lang=es"><img src="https://img.icons8.com/fluent/30/000000/twitter.png"/>twiter</a>
-        </div>
-        <div class="col-sm-4 d-flex flex-column align-items-center">
-          <address>
-            <h1>Contacto</h1>
-            <p><span class="oi oi-home footer-adress-icon"></span> antioquia, medellín colombia</p>
-            <p><span class="oi oi-phone footer-adress-icon"></span> tel:+573218925456</p>
-            <p><span class="oi oi-envelope-closed footer-adress-icon"></span> hotelguia@hoteles.com</p>
-          </address>
-        </div>
-        <div class="col-sm-4 d-flex flex-column align-items-end">
-          <a class="footer-redes-icon"  href="www.facebook.com">precios</a>
-          <a class="footer-redes-icon"  href="www.facebook.com">nosotrós</a>
-          <a class="footer-redes-icon"  href="www.facebook.com">términos y condiciónes</a>
-          <a class="footer-redes-icon"  href="www.facebook.com">contacto</a>
-        </div>
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+        <a class="footer-redes-icon" target="blanck" href="https://www.facebook.com"><img src="https://img.icons8.com/color/30/000000/facebook.png"/>facebook</a>
+        <a class="footer-redes-icon" target="blanck" href="https://www.instagram.com/?hl=es-la"><img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>instagram</a>
+        <a class="footer-redes-icon" target="blanck" href="https://www.google.com.co/?gfe_rd=cr&ei=kBzqVff1IIKv-AW7jJXgAw"><img src="https://img.icons8.com/color/30/000000/google-logo.png"/>google</a>
+        <a class="footer-redes-icon" target="blanck" href="https://twitter.com/?lang=es"><img src="https://img.icons8.com/fluent/30/000000/twitter.png"/>twiter</a>
+      </div>
+      <div class="col-sm-4">
+        <address>
+          <h3>Contacto</h3>
+          <p><span class="oi oi-home footer-adress-icon"></span> antioquia, medellín colombia</p>
+          <p><span class="oi oi-phone footer-adress-icon"></span> tel:+573218925456</p>
+          <p><span class="oi oi-envelope-closed footer-adress-icon"></span> hotelguia@hoteles.com</p>
+        </address>
+      </div>
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a class="footer-redes-icon"  href="www.facebook.com">precios</a>
+        <a class="footer-redes-icon"  href="www.facebook.com">nosotrós</a>
+        <a class="footer-redes-icon"  href="www.facebook.com">términos y condiciónes</a>
+        <a class="footer-redes-icon"  href="www.facebook.com">contacto</a>
       </div>
     </div>
   </footer>

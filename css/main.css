@@ -3,8 +3,7 @@ margin: 0px;
 padding: 0px;
 }
 .jumbotron {
-    background-color: yellowgreen;
-    color:black;
+    background: linear-gradient(to left, #00AAFF, #00FF6C);    color:black;
     margin-top: 50px;
 }
 
@@ -16,7 +15,7 @@ padding: 2px 5px 2px 5px ;
 
 footer {
 padding: 10px 14px 10px 14px;
-background-color: yellowgreen;
+background: linear-gradient(to left, #00AAFF, #00FF6C);
 margin-top: 15px;
 margin-bottom: 0px;
 }
