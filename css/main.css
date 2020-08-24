@@ -8,8 +8,8 @@ padding: 0px;
 }
 
 .card-hotel {
-flex: 1 150px;
-padding: 2px 5px 2px 5px ;
+flex: 1 200px;
+margin-top: 10px;
 
 }
 
@@ -22,7 +22,7 @@ margin-bottom: 0px;
 
 .btn-reserva {
     width: 100%;
-    border-radius: 25px;
+    border-radius: 0px;
 }
 
 .footer-adress-icon {
@@ -32,3 +32,4 @@ margin-bottom: 0px;
 .footer-redes-icon {
     margin-top: 10px;
 }
+
