@@ -42,146 +42,165 @@
       </ol>
     </nav>
   <!--añadimos tabla con precios de los Hoteles-->
-  <div class="table-responsive ">   
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <th>Calidad</th>
-        <th>Hotel Poblado</th>
-        <th>Hotel Cocoroyó</th>
-        <th>Hotel Aguas claras</th>
-        <th>Hotel San pablo</th>
-        <th>Calidad</th>
-        <th>Hotel Poblado</th>
-        <th>Hotel Cocoroyó</th>
-        <th>Hotel Aguas claras</th>
-        <th>Hotel San pablo</th>
-        <th>Calidad</th>
-        <th>Hotel Poblado</th>
-        <th>Hotel Cocoroyó</th>
-        <th>Hotel Aguas claras</th>
-        <th>Hotel San pablo</th>
-      </thead>
-      <tbody>
-        <tr>  
-          <td>
-            <span class="oi oi-star"></span>
-          </td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-        </tr>
-        <tr>  
-          <td>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-          </td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-        </tr>
-        <tr>  
-          <td>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-          </td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-        </tr>
-        <tr>  
-          <td>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-          </td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-        </tr>
-        <tr>  
-          <td>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-            <span class="oi oi-star"></span>
-          </td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$100.000</td>
-          <td>$120.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-          <td>$140.000</td>
-          <td>$160.000</td>
-        </tr>
-      </tbody>
-    </table>  
-    </div>
-  </div>
-  <!--añadimos lista de tarjetas aceptadas-->
-  <div class="d-flex justify-contend-left">
-    <div class="card" style="width: 18rem; margin-top: 10px;">
-      <div class="card-header" style="background-color: blue; color: white;">
-      Tarjetas aceptadas
+  <ul class="nav nav-pills" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="compara-tab" data-toggle="pill" href="#compara" role="tab" aria-controls="compara" aria-selected="true">compara</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="tarjetas-tab" data-toggle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+      <div class="table-responsive ">   
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <th>Calidad</th>
+            <th>Hotel Poblado</th>
+            <th>Hotel Cocoroyó</th>
+            <th>Hotel Aguas claras</th>
+            <th>Hotel San pablo</th>
+            <th>Calidad</th>
+            <th>Hotel Poblado</th>
+            <th>Hotel Cocoroyó</th>
+            <th>Hotel Aguas claras</th>
+            <th>Hotel San pablo</th>
+            <th>Calidad</th>
+            <th>Hotel Poblado</th>
+            <th>Hotel Cocoroyó</th>
+            <th>Hotel Aguas claras</th>
+            <th>Hotel San pablo</th>
+          </thead>
+          <tbody>
+            <tr>  
+              <td>
+                <span class="oi oi-star"></span>
+              </td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+            </tr>
+            <tr>  
+              <td>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+              </td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+            </tr>
+            <tr>  
+              <td>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+              </td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+            </tr>
+            <tr>  
+              <td>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+              </td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+            </tr>
+            <tr>  
+              <td>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+              </td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$100.000</td>
+              <td>$120.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+              <td>$140.000</td>
+              <td>$160.000</td>
+            </tr>
+          </tbody>
+        </table>  
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Tarjeta de Crédito</li>
-        <li class="list-group-item">Tarjeta de Débito</li>
-        <li class="list-group-item">Pagos PSE</li>
-      </ul> 
+    </div>
+      <!--añadimos lista de tarjetas aceptadas-->
+    <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header" style="background-color: blue; color: white;">
+           Tarjetas aceptadas
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Tarjeta de Crédito</li>
+            <li class="list-group-item">Tarjeta de Débito</li>
+            <li class="list-group-item">Pagos PSE</li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+      Cmentarios
     </div>
   </div>
   <!--añadimos footer-->
