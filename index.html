@@ -47,7 +47,7 @@
       <img src="/image/Hotel-portada.png" class="img-fluid" alt="Responsive image">  
     </div>
 
-    <div class="row align-itams-center;">
+    <div class="row align-items-center;">
       <div class="col-sm-3 d-flex flex-column flex-wrap justify-content-between mt-3 ml-2 mb-2 mr-5">
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#facil" aria-expanded="false" aria-controls="multiCollapese1">Fácil y rápido</button>
       </div>
@@ -81,14 +81,29 @@
 
       <hr style: color="#031012">
 
-    <div class="d-flex flex-wrap flex-row-reverse">
+    <div class="d-flex flex-wrap flex-row">
       <div class=" card card-hotel d-flex flex-column justify-content-between ml-2 mb-2"> 
         <img src="/image/hoteljpg.jpg" class="card-img-top" alt="responsive image">
         <div class="card-body">
           <h5 class="card-title">Hotel Cocuyó</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
-          <p class="card-text">Aquí disfrutaras de las mejores vistas al mar y encontraras las mejores bebidas de la región.</p>
-          </div> 
+          <p class="card-text">
+            Aquí disfrutaras de las mejores vistas al mar y encontraras las mejores bebidas de la región.
+          </p>
+        <div class="accordion" id="accordion-hotel">
+          <div id="headcocuyo">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsecocuyo" aria-expanded="false" aria-controls="collapsecocuyo">
+                Ver más información.
+              </button>
+            </h5>
+          </div>
+          <div id="collapsecocuyo" class="collapse" aria-labelledby="headcocuyo" data-parent="#accordion-hotel">
+            <p class="align-center;">llevate un gran obsequio por reservar</p>
+            <p class="align-center;">llevate un gran obsequio por reservar</p>
+          </div>
+          </div>
+        </div> 
           <div class="card-footer">
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
           </div>
@@ -100,6 +115,19 @@
           <h5 class="card-title">Hotel san cristo</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">Aquí disfrutaras de las mejores vistas al mar.</p>
+          <div class="accordion" id="accordion-hotel">
+            <div style="margin-top: 35%;" id="headsancristo">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsesancristo" aria-expanded="false" aria-controls="collapsesancristo">
+                  Ver más información.
+                </button>
+              </h5>
+            </div>
+            <div id="collapsesancristo" class="collapse" aria-labelledby="headsancristo" data-parent="#accordion-hotel">
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+            </div>
+            </div>
         </div>
         <div class="card-footer">
           <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
