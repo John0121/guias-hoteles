@@ -188,9 +188,38 @@
           <h5 class="card-title">Hotel poblado</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">lleva tu experiencia al maximó nivel con los chefs reconocidos y sus comidas extrangeras.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div>
         <div class="card-footer">
           <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
+        </div>
+      </div>
+    </div>
+    <!--añadimos modals-->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label type="email" for="recipient-name" class="col-form-label">tu email:</label>
+                <input type="email" class="form-control" placeholder="Escriba su correo electronico" id="email">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" placeholder="Deje su comentario" rows="6" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
         </div>
       </div>
     </div>
