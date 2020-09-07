@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     
-
-
     <title>Guías hoteles</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md  navbar-dark bg-dark fixed-top">
       <a class="navbar-brand"  href="#">Hoteles</a>
@@ -184,52 +183,93 @@
         </table>  
       </div>
     </div>
-      <!--añadimos lista de tarjetas aceptadas-->
+
+      <!--añadimos lista de tarjetas aceptadas-->  
+
     <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-      <div class="d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header" style="background-color: blue; color: white;">
-           Tarjetas aceptadas
+      <div class="accordion" id="accordionTarjetas">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+             <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAmerican" aria-expanded="true" aria-controls="collapseAmerican">
+                Tarjeta American express
+              </button>
+            </h5>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Tarjeta de Crédito</li>
-            <li class="list-group-item">Tarjeta de Débito</li>
-            <li class="list-group-item">Pagos PSE</li>
-          </ul> 
+          <div id="collapseAmerican" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+            <div class="card-body">
+              Podes reservar de 6 coutas hasta 96.
+              Recibe un espectacular regalo.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseVisa" aria-expanded="false" aria-controls="collapseVisa">
+                Tarjeta Visa
+              </button>
+            </h5>
+          </div>
+          <div id="collapseVisa" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+            <div class="card-body">
+              Podes reservar de 6 coutas hasta 96
+              Obtén el 10% en tu primera reserva.
+              Recibe un espectacular regalo.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDebito" aria-expanded="true" aria-controls="collapseDebito">
+                Tarjeta Bancolombia débito
+              </button>
+            </h5>
+          </div>
+          <div id="collapseDebito" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+            <div class="card-body">
+              Recibe un espectacular regalo.
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
-      Cmentarios
+
+      <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+        Comentarios
+      </div>
     </div>
   </div>
+
   <!--añadimos footer-->
   <footer>
-    <div class="container-fluid" >
-      <div class="row">
-        <div class="col-sm-4 d-flex flex-column">
-          <a class="footer-redes-icon" target="blanck" href="https://www.facebook.com"><img src="https://img.icons8.com/color/30/000000/facebook.png"/>facebook</a>
-          <a class="footer-redes-icon" target="blanck" href="https://www.instagram.com/?hl=es-la"><img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>instagram</a>
-          <a class="footer-redes-icon" target="blanck" href="https://www.google.com.co/?gfe_rd=cr&ei=kBzqVff1IIKv-AW7jJXgAw"><img src="https://img.icons8.com/color/30/000000/google-logo.png"/>google</a>
-          <a class="footer-redes-icon" target="blanck" href="https://twitter.com/?lang=es"><img src="https://img.icons8.com/fluent/30/000000/twitter.png"/>twiter</a>
-        </div>
-        <div class="col-sm-4 d-flex flex-column align-items-center">
-          <address>
-            <h1>Contacto</h1>
-            <p><span class="oi oi-home footer-adress-icon"></span> antioquia, medellín colombia</p>
-            <p><span class="oi oi-phone footer-adress-icon"></span> tel:+573218925456</p>
-            <p><span class="oi oi-envelope-closed footer-adress-icon"></span> hotelguia@hoteles.com</p>
-          </address>
-        </div>
-        <div class="col-sm-4 d-flex flex-column align-items-end">
-          <a class="footer-redes-icon"  href="www.facebook.com">precios</a>
-          <a class="footer-redes-icon"  href="www.facebook.com">nosotrós</a>
-          <a class="footer-redes-icon"  href="www.facebook.com">términos y condiciónes</a>
-          <a class="footer-redes-icon"  href="www.facebook.com">contacto</a>
-        </div>
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+        <a class="footer-redes-icon" target="blanck" href="https://www.facebook.com"><img src="https://img.icons8.com/color/30/000000/facebook.png"/>facebook</a>
+        <a class="footer-redes-icon" target="blanck" href="https://www.instagram.com/?hl=es-la"><img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>instagram</a>
+        <a class="footer-redes-icon" target="blanck" href="https://www.google.com.co/?gfe_rd=cr&ei=kBzqVff1IIKv-AW7jJXgAw"><img src="https://img.icons8.com/color/30/000000/google-logo.png"/>google</a>
+        <a class="footer-redes-icon" target="blanck" href="https://twitter.com/?lang=es"><img src="https://img.icons8.com/fluent/30/000000/twitter.png"/>twiter</a>
+      </div>
+      <div class="col-sm-4 d-flex flex-column">
+        <address>
+          <h1>Contacto</h1>
+          <p><span class="oi oi-home footer-adress-icon"></span> antioquia, medellín colombia</p>
+          <p><span class="oi oi-phone footer-adress-icon"></span> tel:+573218925456</p>
+          <p><span class="oi oi-envelope-closed footer-adress-icon"></span> hotelguia@hoteles.com</p>
+        </address>
+      </div>
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a class="footer-redes-icon"  href="www.facebook.com">precios</a>
+        <a class="footer-redes-icon"  href="www.facebook.com">nosotrós</a>
+        <a class="footer-redes-icon"  href="www.facebook.com">términos y condiciónes</a>
+        <a class="footer-redes-icon"  href="www.facebook.com">contacto</a>
       </div>
     </div>
   </footer>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS,then ionicons-->
@@ -237,6 +277,5 @@
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-
   </body>
 </html>

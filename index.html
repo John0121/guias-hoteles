@@ -43,26 +43,35 @@
         <li class="breadcrumb-item active" aria-current="page">Home</li>
       </ol>
     </nav>
+    <div>
+      <img src="/image/Hotel-portada.png" class="img-fluid" alt="Responsive image">  
+    </div>
 
-    
-  <div>
-    <img src="/image/Hotel-portada.png" class="img-fluid" alt="Responsive image">  
-  </div>
-
+    <div class="row align-itams-center;">
+      <div class="col-sm-3 d-flex flex-column flex-wrap justify-content-between mt-3 ml-2 mb-2 mr-5">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#facil" aria-expanded="false" aria-controls="multiCollapese1">Fácil y rápido</button>
+      </div>
+      <div class="col-sm-3 d-flex flex-column flex-wrap justify-content-between mt-3 ml-2 mb-2 mr-5">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#mejores" aria-expanded="false" aria-controls="multiCollapese2">Los mejores</button>
+      </div>
+      <div class="col-sm-3 d-flex flex-column flex-wrap justify-content-between mt-3 ml-2 mb-2 mr-5">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapese3">¿Dondé puedo pagar?</button>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 collapse multi-collapse" id="facil">
         <p>
           <h3>fácil y rápido</h3>
           <p>encuentra de la manera mas fácil y rápida ese hotel cuando y donde sea, desde la cómodidad de tu hogar.</p>
         </p>
-        </div>
-      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4 collapse multi-collapse" id="mejores">
         <p>
-          <h3>Las mejores guías</h3>
+          <h3>Los mejores Hoteles</h3>
           <p>Aquí encontraras los mejores Hoteles del mundo a un precio especial.</p>
         </p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 collapse multi-collapse" id="pago">
         <p>
          <h3>Facilidades de pagos</h3>
          <p>¿que esperas? aceptamos cualquier tipo de tarjetas de crédito y debito, otros medios de pago como pse y paypal.</p>
