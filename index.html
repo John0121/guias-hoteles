@@ -81,11 +81,37 @@
 
       <hr style: color="#031012">
 
-    <div class="d-flex flex-wrap flex-row">
+      <!--añadimos carrusel-->
+
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/image/slide-uno.jpg" alt="primer slide">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block w-100" src="/image/slide-dos.jpg" alt="segundo slide">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block w-100" src="/image/slide-tres.jpg" alt="tercer slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div> 
+      
+      <!--cartas de hoteles-->
+
+    <div class="d-flex flex-wrap flex-row-reverse">
       <div class=" card card-hotel d-flex flex-column justify-content-between ml-2 mb-2"> 
         <img src="/image/hoteljpg.jpg" class="card-img-top" alt="responsive image">
         <div class="card-body">
-          <h5 class="card-title">Hotel Cocuyó</h5>
+          <h5 class="card-title" data-toggle="popover" data-trigger="hover" data-placement="top" title="promoción del día" data-content="llevate una limonada gratis">Hotel Cocuyó</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">
             Aquí disfrutaras de las mejores vistas al mar y encontraras las mejores bebidas de la región.
@@ -97,12 +123,13 @@
                 Ver más información.
               </button>
             </h5>
+            </div>
+            <div id="collapsecocuyo" class="collapse" aria-labelledby="headcocuyo" data-parent="#accordion-hotel">
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+            </div>
           </div>
-          <div id="collapsecocuyo" class="collapse" aria-labelledby="headcocuyo" data-parent="#accordion-hotel">
-            <p class="align-center;">llevate un gran obsequio por reservar</p>
-            <p class="align-center;">llevate un gran obsequio por reservar</p>
-          </div>
-          </div>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div> 
           <div class="card-footer">
             <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
@@ -112,7 +139,7 @@
       <div class=" card card-hotel d-flex flex-column justify-content-between ml-2 mb-2"> 
         <img src="/image/hoteljpg.jpg" class="card-img-top" alt="responsive image">
         <div class="card-body">
-          <h5 class="card-title">Hotel san cristo</h5>
+          <h5 class="card-title" data-toggle="popover" data-trigger="hover" data-placement="top" title="promoción del día" data-content="llevate una limonada gratis">Hotel san cristo</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">Aquí disfrutaras de las mejores vistas al mar.</p>
           <div class="accordion" id="accordion-hotel">
@@ -127,7 +154,8 @@
               <p class="align-center;">llevate un gran obsequio por reservar</p>
               <p class="align-center;">llevate un gran obsequio por reservar</p>
             </div>
-            </div>
+          </div>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div>
         <div class="card-footer">
           <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
@@ -137,9 +165,23 @@
       <div class=" card card-hotel d-flex flex-column justify-content-between ml-2 mb-2"> 
         <img src="/image/hoteljpg.jpg" class="card-img-top" alt="responsive image">
         <div class="card-body">
-          <h5 class="card-title">Hotel palmeira</h5>
+          <h5 class="card-title" data-toggle="popover" data-trigger="hover" data-placement="top" title="promoción del día" data-content="llevate una limonada gratis">Hotel palmeira</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">ven y disfruta del mejor servicio con nuestras tematicas habitaciónes.</p>
+          <div class="accordion" id="accordion-hotel">
+            <div style="margin-top: 23%;" id="headpalmeira">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsepalmeira" aria-expanded="false" aria-controls="collapsepalmeira">
+                  Ver más información.
+                </button>
+              </h5>
+            </div>
+            <div id="collapsepalmeira" class="collapse" aria-labelledby="headpalmeira" data-parent="#accordion-hotel">
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div>
         <div class="card-footer">
           <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
@@ -149,9 +191,23 @@
       <div class=" card card-hotel d-flex flex-column justify-content-between ml-2 mb-2"> 
         <img src="/image/hoteljpg.jpg" class="card-img-top" alt="responsive image">
         <div class="card-body">
-          <h5 class="card-title">Hotel rosales</h5>
+          <h5 class="card-title" data-toggle="popover" data-trigger="hover" data-placement="top" title="promoción del día" data-content="llevate una limonada gratis">Hotel rosales</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">no esperes más y encuentra las mejores vistas desde cualquiera de nuestras habitaciónes.</p>
+          <div class="accordion" id="accordion-hotel">
+            <div style="margin-top: 0%;" id="headrosales">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapserosales" aria-expanded="false" aria-controls="collapserosales">
+                  Ver más información.
+                </button>
+              </h5>
+            </div>
+            <div id="collapserosales" class="collapse" aria-labelledby="headrosales" data-parent="#accordion-hotel">
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div>
         <div class="card-footer">
           <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
@@ -161,9 +217,23 @@
       <div class=" card card-hotel d-flex flex-column justify-content-between ml-2 mb-2"> 
         <img src="/image/img-recepcionjpg.jpg" class="card-img-top" alt="responsive image">
         <div class="card-body">
-          <h5 class="card-title">Hotel san diego</h5>
+          <h5 class="card-title" data-toggle="popover" data-trigger="hover" data-placement="top" title="promoción del día" data-content="llevate una limonada gratis">Hotel san diego</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">encontraras las mejores bebidas de la región.</p>
+          <div class="accordion" id="accordion-hotel">
+            <div style="margin-top: 36%;" id="headdiego">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsediego" aria-expanded="false" aria-controls="collapsediego">
+                  Ver más información.
+                </button>
+              </h5>
+            </div>
+            <div id="collapsediego" class="collapse" aria-labelledby="headdiego" data-parent="#accordion-hotel">
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  
         </div>
         <div class="card-footer">
           <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
@@ -173,9 +243,23 @@
       <div class=" card card-hotel d-flex flex-column justify-content-between ml-2 mb-2"> 
         <img src="/image/hoteljpg.jpg" class="card-img-top" alt="responsive image"> 
         <div class="card-body">
-          <h5 class="card-title">Hotel aguas claras</h5>
+          <h5 class="card-title" data-toggle="popover" data-trigger="hover" data-placement="top" title="promoción del día" data-content="llevate una limonada gratis">Hotel aguas claras</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">servicios totalmente vips con las mejores aguas termales.</p>
+          <div class="accordion" id="accordion-hotel">
+            <div style="margin-top: 23%;" id="headclaras">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseclaras" aria-expanded="false" aria-controls="collapseclaras">
+                  Ver más información.
+                </button>
+              </h5>
+            </div>
+            <div id="collapseclaras" class="collapse" aria-labelledby="headclaras" data-parent="#accordion-hotel">
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div>
         <div class="card-footer">
           <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
@@ -185,17 +269,31 @@
       <div class=" card card-hotel d-flex flex-column justify-content-between ml-2 mb-2"> 
         <img src="/image/img-recepcionjpg.jpg" class="card-img-top" alt="responsive image">
         <div class="card-body">
-          <h5 class="card-title">Hotel poblado</h5>
+          <h5 class="card-title" data-toggle="popover" data-trigger="hover" data-placement="top" title="promoción del día" data-content="llevate una limonada gratis">Hotel poblado</h5>
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">lleva tu experiencia al maximó nivel con los chefs reconocidos y sus comidas extrangeras.</p>
+          <div class="accordion" id="accordion-hotel">
+            <div style="margin-top: 0%;" id="headpoblado">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsepoblado" aria-expanded="false" aria-controls="collapsepoblado">
+                  Ver más información.
+                </button>
+              </h5>
+            </div>
+            <div id="collapsepoblado" class="collapse" aria-labelledby="headpoblado" data-parent="#accordion-hotel">
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+              <p class="align-center;">llevate un gran obsequio por reservar</p>
+            </div>
+          </div>
           <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-reserva"><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
+          <button class="btn btn-primary btn-reserva" id="popover-button"  data-toggle="popover" data-placement="bottom" title="Promoción" data-content="llevate un regalo" ><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
         </div>
       </div>
     </div>
-    <!--añadimos modals-->
+
+    <!--añadimos modals para las card-hotel-->
     <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -207,6 +305,10 @@
           </div>
           <div class="modal-body">
             <form>
+              <div class="form-group">
+                <label type="name" for="recipient-name" class="col-form-label">Tu nombre:</label>
+                <input type="name" class="form-control" placeholder="Escriba su Nombre" id="name">
+              </div>
               <div class="form-group">
                 <label type="email" for="recipient-name" class="col-form-label">tu email:</label>
                 <input type="email" class="form-control" placeholder="Escriba su correo electronico" id="email">
@@ -249,13 +351,27 @@
         </div>
       </div>
     </footer>
+   
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, tippy.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    
+    <script>
+      $(function(){
+        $('[data-toggle="tooltip"]').tooltip();  
+        $('[data-toggle="popover"]').popover();
+        $('.carousel').carousel({
+          interval: 3000
+        });
+      });
+      </script>
+    
 
   </body>
 </html>
