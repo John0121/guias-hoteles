@@ -221,7 +221,7 @@
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">encontraras las mejores bebidas de la región.</p>
           <div class="accordion" id="accordion-hotel">
-            <div style="margin-top: 36%;" id="headdiego">
+            <div style="margin-top: 23%;" id="headdiego">
               <h5 class="mb-0">
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsediego" aria-expanded="false" aria-controls="collapsediego">
                   Ver más información.
@@ -273,7 +273,7 @@
           <h6 class="card-subtitle text-muted">Medellín</h6>
           <p class="card-text">lleva tu experiencia al maximó nivel con los chefs reconocidos y sus comidas extrangeras.</p>
           <div class="accordion" id="accordion-hotel">
-            <div style="margin-top: 0%;" id="headpoblado">
+            <div style="margin-top: 15%;" id="headpoblado">
               <h5 class="mb-0">
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsepoblado" aria-expanded="false" aria-controls="collapsepoblado">
                   Ver más información.
@@ -285,7 +285,7 @@
               <p class="align-center;">llevate un gran obsequio por reservar</p>
             </div>
           </div>
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
         </div>
         <div class="card-footer">
           <button class="btn btn-primary btn-reserva" id="popover-button"  data-toggle="popover" data-placement="bottom" title="Promoción" data-content="llevate un regalo" ><span class="oi oi-plus body-buttom-icon"></span> Reserva</button>
@@ -360,14 +360,33 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>    
     <script>
       $(function(){
         $('[data-toggle="tooltip"]').tooltip();  
         $('[data-toggle="popover"]').popover();
         $('.carousel').carousel({
           interval: 3000
+        });
+        $('#contacto').on('show.bs.modal', function (e){
+          console.log('el modal contacto se está mostrando');
+
+          $('#contactoBtn').removeClass('btn-outline-success');
+          $('#contactoBtn').addClass('btn-primary');
+          $('#contactoBtn').prop('disabled', true);
+        });
+
+        $('#contacto').on('shown.bs.modal', function (e){
+          console.log('el modal contacto se mostró');
+      	});
+        $('#contacto').on('hide.bs.modal', function (e){
+          console.log('el modal contacto se oculta');
+        });
+        $('#contacto').on('hidden.bs.modal', function (e){
+          console.log('el modal contacto se ocultó');
+          $('#contactoBtn').prop('disabled', false);
+          $('#contactoBtn').removeClass('btn-primary');
+          $('#contactoBtn').addClass('btn-outline-success');
         });
       });
       </script>
