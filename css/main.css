@@ -3,14 +3,13 @@ margin: 0px;
 padding: 0px;
 }
 .jumbotron {
-    background: linear-gradient(to left, #00AAFF, #00FF6C);    color:black;
+    background: linear-gradient(to left, #00AAFF, #00FF6C);    
+    color:black;
     margin-top: 50px;
 }
-
 .card-hotel {
 flex: 1 200px;
 margin-top: 10px;
-
 }
 
 footer {
@@ -24,15 +23,12 @@ margin-bottom: 0px;
     width: 100%;
     border-radius: 0px;
 }
-
 .footer-adress-icon {
     padding-right: 10px;
 }
-
 .footer-redes-icon {
     margin-top: 10px;
 }
-
 .tab-content {
     padding-top: 10px;
 }
