@@ -16,7 +16,7 @@ body{
     }
     .card-hotel {
     flex: 1 200px;
-    @include margenes (10px, 10px);;
+    @include margenes (10px, 0px);;
     }
     
     footer {
