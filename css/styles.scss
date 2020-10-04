@@ -1,4 +1,7 @@
 $rainbow: linear-gradient(to left, #00AAFF, #00FF6C);
+$c-rojo: color=rgb(238, 20, 20);
+$c-amarillo: color=rgb(243, 243, 35);
+$c-verde: color=rgb(48, 158, 48);
 
 @mixin margenes ($top, $bottom) {
     margin-top: $top;
